@@ -14,9 +14,41 @@
     <title>Weather App</title>
   </head>
   <body>
-      <div class="countainer">
-    <h1>Hello</h1>
+    <div class="countainer px-4 pt-2 pb-4 mt-2 rounded">
+      <div>
+        <div class="col-12">
+          <em id="todaysDate">Tue, Feb 6</em>
+        </div>
+        <div class="col-12">
+        <em id="todaysHour">15:05</em>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for a city"
+            id="search-text-input"
+          />
+        </div class="col-2">
+        <button id="button" type="submit" class="btn btn-light sm-2">
+            Search
+          </button>
+        <div>
+          <div class="col-2">
+<button id="currentLocation" type="submit" class="btn btn-link">
+           <img id="iconLocalisation" src="src/image/localisation.png" alt="">
+          </button>
+          </div>
 
+
+        </div>
+      </div>
+
+      <h1>Ottawa</h1>
+      <p>-10</p>
+      <p>snow</p>
     </div>
     <script src="src/index.js"></script>
   </body>
