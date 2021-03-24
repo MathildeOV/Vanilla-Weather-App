@@ -15,41 +15,117 @@
   </head>
   <body>
     <div class="countainer px-4 pt-2 pb-4 mt-2 rounded">
-      <div>
-        <div class="col-12">
-          <em id="todaysDate">Tue, Feb 6</em>
-        </div>
-        <div class="col-12">
-        <em id="todaysHour">15:05</em>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Search for a city"
-            id="search-text-input"
-          />
-        </div class="col-2">
-        <button id="button" type="submit" class="btn btn-light sm-2">
-            Search
-          </button>
+      <div class="weather-app-wrapper">
         <div>
+          <div class="col-12">
+            <em id="todaysDate">Tue, Feb 6</em>
+          </div>
+          <div class="col-12">
+            <em id="todaysHour">15:05</em>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for a city"
+              id="search-text-input"
+            />
+          </div>
+          <div>
+            <button id="buttonSearch" type="submit" class="btn btn-light sm-2">
+              Search
+            </button>
+          </div>
           <div class="col-2">
-<button id="currentLocation" type="submit" class="btn btn-link">
-           <img id="iconLocalisation" src="src/image/localisation.png" alt="">
-          </button>
+            <button type="button" class="btn btn-light">Current</button>
+          </div>
+        </div>
+        <div class="currentCity">
+          <ul>
+            <li><p id="city">Ottawa</p></li>
+            <li><p id="description">Rain</p></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature"></div>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div class="float-right">
+              <strong id="temperature"> 25°C </strong>
+              <span class="units">
+                <a href="#" id="celsius">°C</a>
+                <a href="#" class="fahrenheit">°F</a></span
+              >
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="feelsLike">Feels like: -15 <span>°C</span></li>
+              <li id="humidity">Humidity:<span>%</span></li>
+              <li id="wind">Wind: 15 <span>%</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row weather-forecast" id="forecast">
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
           </div>
 
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
+          </div>
 
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
+          </div>
+
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
+          </div>
+
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
+          </div>
+
+          <div class="col-2">
+            <h3>17h</h3>
+            <img class="icon" src="src/images/sun.png" alt="sun" />
+            <div>
+              <strong>10°</strong>
+              9°
+            </div>
+          </div>
         </div>
       </div>
-
-      <h1>Ottawa</h1>
-      <p>-10</p>
-      <p>snow</p>
+      <script src="src/index.js"></script>
     </div>
-    <script src="src/index.js"></script>
   </body>
 </html>
