@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
@@ -42,35 +43,33 @@
             <button type="button" class="btn btn-light">Current</button>
           </div>
         </div>
-        <div class="currentCity">
-          <ul>
-            <li><p id="city">Ottawa</p></li>
-            <li><p id="description">Rain</p></li>
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature"></div>
-            <img class="icon" src="src/images/sun.png" alt="sun" />
-            <div class="float-right">
-              <strong id="temperature"> 25°C </strong>
+
+        <div class="currentDay row my-5">
+          <div class="col">
+            <h2 id="currentCity"></h2>
+            <p class="currentTemperature">
+              <span id="currentTemperatureValue"></span>
               <span class="units">
-                <a href="#" id="celsius">°C</a>
-                <a href="#" class="fahrenheit">°F</a></span
-              >
-            </div>
+                <a href="#" id="celsius"><strong>°C</strong></a> |
+                <a href="#" id="fahrenheit"> °F</a>
+              </span>
+            </p>
+            <p id="description"></p>
           </div>
-          <div class="col-6">
-            <ul>
-              <li id="feelsLike">Feels like: -15 <span>°C</span></li>
-              <li id="humidity">Humidity:<span>%</span></li>
-              <li id="wind">Wind: 15 <span>%</span></li>
-            </ul>
+
+          <div class="col">
+            <img id="iconPrincipal" src="src/images/sun-cloud.png" alt="" />
+          </div>
+
+          <div class="col">
+            <p >Feels like: <span id="feelsLike"></span>°C</p>
+            <p >Humidity: <span id="humidity"></span>%</p>
+            <p >Wind: <span id="wind"></span>Km/H</p>
           </div>
         </div>
 
         <div class="row weather-forecast" id="forecast">
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
@@ -79,7 +78,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
@@ -88,7 +87,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
@@ -97,7 +96,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
@@ -106,7 +105,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
@@ -115,7 +114,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col">
             <h3>17h</h3>
             <img class="icon" src="src/images/sun.png" alt="sun" />
             <div>
