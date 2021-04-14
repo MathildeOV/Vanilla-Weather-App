@@ -2,37 +2,23 @@
   width: 1024px;
 }
 
-.currentCity{
+.currentCity {
   margin-bottom: 20px;
 }
 
+.currentDay{
+  text-transform: capitalize;
+}
+
 #city,
-#description{
+#description {
   text-align: left;
   margin: 0%;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
 
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
-  color: rgb(135, 135, 135);
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
-}
-
-li:first-letter {
-  text-transform: capitalize;
-}
-
-#search{
+#search {
   padding: 20px;
 }
 
@@ -42,6 +28,7 @@ li:first-letter {
   text-align: right;
 }
 
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -50,6 +37,10 @@ li:first-letter {
   border-radius: 5px;
 }
 
-.icon{
-width: 60px;
+.icon {
+  width: 60px;
+}
+
+#iconPrincipal {
+  width: 60px;
 }
