@@ -6,28 +6,28 @@
   margin-bottom: 20px;
 }
 
-.currentDay{
-  text-transform: capitalize;
+.currentDay {
+  text-align: center;
 }
 
 #city,
 #description {
-  text-align: left;
+  text-align: center;
   margin: 0%;
 }
 
-
+#description:first-letter {
+  text-transform: capitalize;
+}
 
 #search {
   padding: 20px;
 }
 
-#todaysDate,
-#todaysHour {
+#todaysDate {
   display: block;
   text-align: right;
 }
-
 
 .weather-app-wrapper {
   max-width: 600px;
