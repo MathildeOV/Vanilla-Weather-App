@@ -20,6 +20,10 @@
   text-transform: capitalize;
 }
 
+#iconPrincipal {
+    width: 120px;
+}
+
 #search {
   padding: 20px;
 }
@@ -27,6 +31,7 @@
 #todaysDate {
   display: block;
   text-align: right;
+  padding-bottom: 10px;
 }
 
 .weather-app-wrapper {
@@ -38,9 +43,5 @@
 }
 
 .icon {
-  width: 60px;
-}
-
-#iconPrincipal {
   width: 60px;
 }
