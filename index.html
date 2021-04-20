@@ -22,25 +22,31 @@
             <em id="todaysDate">Tuesday 05:20</em>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search for a city"
-              id="search-text-input"
-            />
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for a city"
+                id="searchCityInput"
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <button
+                id="buttonSearch"
+                type="submit"
+                class="btn btn-light sm-2"
+              >
+                Search
+              </button>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-light">Current</button>
+            </div>
           </div>
-          <div>
-            <button id="buttonSearch" type="submit" class="btn btn-light sm-2">
-              Search
-            </button>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-light">Current</button>
-          </div>
-        </div>
-
+        </form>
         <div class="currentDay row my-5">
           <div class="col">
             <h2 id="currentCity"></h2>
@@ -55,7 +61,7 @@
           </div>
 
           <div class="col">
-            <img id="iconPrincipal" src="src/images/sun-cloud.png" alt="" />
+            <img id="iconPrincipal" src="" alt="" />
           </div>
 
           <div class="col">
